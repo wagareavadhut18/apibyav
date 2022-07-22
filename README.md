@@ -7,3 +7,9 @@
     ```sh
     php artisan key:generate
     ```
+2) For seeding make UserSeedr and enter the commands for adding 5 dummy records
+     ```sh
+    php artisan tinker
+    App\Models\User::factory()->count(5)->create()
+    ```
+
