@@ -13,3 +13,15 @@
     App\Models\User::factory()->count(5)->create()
     ```
 
+3) Integrate passport authentication :
+    - https://packagist.org/packages/dusterio/lumen-passport
+    - https://github.com/dusterio/lumen-passport
+    - https://www.youtube.com/watch?v=g_22EUfibJ8
+
+    - After adding configuration code run the following commands for to migrate and install:
+    ```bash
+    # Create new tables for Passport
+    php artisan migrate
+    # Install encryption keys and other stuff for Passport
+    php artisan passport:install
+    ```
