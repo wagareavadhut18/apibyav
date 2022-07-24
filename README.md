@@ -25,3 +25,9 @@
     # Install encryption keys and other stuff for Passport
     php artisan passport:install
     ```
+
+4) For creating passport Client object installed guzzlehttp package :
+    - https://docs.guzzlephp.org/en/stable/overview.html#installation
+    ```bash
+    composer require guzzlehttp/guzzle
+    ```

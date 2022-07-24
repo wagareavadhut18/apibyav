@@ -16,3 +16,14 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->post('/api/register', 'AuthController@register');
+$router->post('/api/login', 'AuthController@login');
+$router->post('/api/logout', 'AuthController@logout');
+
+$router->group(['prefix' => 'api'], function() use ($router) {
+    $router->group(['middleware' => 'auth'], function() use ($router) {
+        //Authorized routes call from here
+        
+    });
+});
